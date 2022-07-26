@@ -1,4 +1,4 @@
-const Port = process.env.Port || 5000
+const PORT = process.env.PORT || 5000
 
 const io = require('socket.io')({
   cors: {
@@ -21,4 +21,4 @@ io.on('connection', socket => {
   })
 })
 
-io.listen(Port);
+io.listen(PORT);
