@@ -3,6 +3,8 @@ const PORT = process.env.PORT || 5000
 const io = require('socket.io')({
   cors: {
     origin: "*",
+    methods: ["GET", "POST","PATCH", "PUT", "DELETE", "OPTIONS"],
+    // allowedHeaders: ["my-custom-header"],
   }
 })
 
